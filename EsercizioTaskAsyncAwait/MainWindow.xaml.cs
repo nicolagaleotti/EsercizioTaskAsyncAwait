@@ -58,5 +58,10 @@ namespace EsercizioTaskAsyncAwait
                 );
             });
         }
+
+        private void btnPrimo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
