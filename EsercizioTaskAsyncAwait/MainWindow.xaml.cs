@@ -61,7 +61,22 @@ namespace EsercizioTaskAsyncAwait
 
         private void btnPrimo_Click(object sender, RoutedEventArgs e)
         {
-
+            lblPrimo.Content = "";
+            bool primo = true;
+            int a = int.Parse(txtA.Text);
+            for (int i = 2; i <= a / 2; i++)
+            {
+                if (a % i == 0)
+                    primo = false;
+            }
+            if (primo == false)
+            {
+                lblPrimo.Content = "Non è primo!";
+            }
+            else
+            {
+                lblPrimo.Content = "E' primo!";
+            }
         }
     }
 }
